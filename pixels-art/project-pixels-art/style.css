@@ -1,0 +1,33 @@
+#title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.color {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+#pixel-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+  height: 210px;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+#clear-board {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#board-size {
+  margin-right: 7px;
+}
