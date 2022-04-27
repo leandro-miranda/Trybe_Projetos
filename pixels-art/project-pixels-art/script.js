@@ -61,9 +61,9 @@ function addRemoveSelected() {
 addRemoveSelected();
 
 // Clicar em um pixel dentro do quadro após selecionar uma cor na paleta faz com que o pixel seja preenchido com a cor selecionada.
-const boxPixel = document.querySelectorAll('.pixel');
 
 function selectBoxPixel() {
+  const boxPixel = document.querySelectorAll('.pixel');
   for (let i = 0; i < boxPixel.length; i += 1) {
     boxPixel[i].addEventListener('click', function (event) {
       const selectedColor = childFirst.style.backgroundColor;
