@@ -61,6 +61,7 @@ function addRemoveSelected() {
 addRemoveSelected();
 
 const boxPixel = document.getElementsByClassName('pixel');
+
 // Clicar em um pixel dentro do quadro após selecionar uma cor na paleta faz com que o pixel seja preenchido com a cor selecionada.
 function selectBoxPixel() {
   for (let i = 0; i < boxPixel.length; i += 1) {
