@@ -45,11 +45,9 @@ boxCreate();
 let childFirst = document.querySelector('.color');
 childFirst.classList.add('selected');
 
-// pega todas as classes color
-const boxColor = document.querySelectorAll('.color');
-
 // Clicar em uma das cores da paleta faz com que ela seja selecionada e utilizada para preencher os pixels no quadro.
 function addRemoveSelected() {
+  const boxColor = document.querySelectorAll('.color');
   for (let i = 0; i < boxColor.length; i += 1) {
     boxColor[i].addEventListener('click', function (event) {
       childFirst.classList.remove('selected');
@@ -61,7 +59,6 @@ function addRemoveSelected() {
 addRemoveSelected();
 
 // Clicar em um pixel dentro do quadro após selecionar uma cor na paleta faz com que o pixel seja preenchido com a cor selecionada.
-
 function selectBoxPixel() {
   const boxPixel = document.querySelectorAll('.pixel');
   for (let i = 0; i < boxPixel.length; i += 1) {
@@ -76,6 +73,7 @@ selectBoxPixel();
 
 // Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco.
 function createBotton() {
+  const boxPixel = document.querySelectorAll('.pixel');
   const button = document.createElement('button');
   button.id = 'clear-board';
   button.innerText = 'Limpar';
