@@ -1,11 +1,11 @@
 // cores sortidas
 function colors() {
-  const color = Math.floor(Math.random() * 255);
-  return color;
+  const colorRandom = Math.floor(Math.random() * 255);
+  return colorRandom;
 }
 
 // criando 4 paletas de cores com id color-palette, 4 cores distintas, adicionando a classe color e definindo a borda
-function div() {
+function divCreate() {
   const array = ['black'];
   for (let i = 1; i < 4; i += 1) {
     array.push(`rgb(${colors()}, ${colors()}, ${colors()})`);
@@ -21,7 +21,7 @@ function div() {
     divColor.appendChild(divSon);
   }
 }
-div();
+divCreate();
 
 //  Adicione à página um quadro de pixels, com 25 pixels, classe pixel e background-color branco
 let box = 5;
@@ -45,9 +45,11 @@ boxCreate();
 let childFirst = document.querySelector('.color');
 childFirst.classList.add('selected');
 
+// pega todas as classes color
+const boxColor = document.querySelectorAll('.color');
+
 // Clicar em uma das cores da paleta faz com que ela seja selecionada e utilizada para preencher os pixels no quadro.
 function addRemoveSelected() {
-  const boxColor = document.querySelectorAll('.color');
   for (let i = 0; i < boxColor.length; i += 1) {
     boxColor[i].addEventListener('click', function (event) {
       childFirst.classList.remove('selected');
@@ -58,14 +60,14 @@ function addRemoveSelected() {
 }
 addRemoveSelected();
 
+const boxPixel = document.getElementsByClassName('pixel');
 // Clicar em um pixel dentro do quadro após selecionar uma cor na paleta faz com que o pixel seja preenchido com a cor selecionada.
 function selectBoxPixel() {
-  const boxPixel = document.querySelectorAll('.pixel');
   for (let i = 0; i < boxPixel.length; i += 1) {
     boxPixel[i].addEventListener('click', function (event) {
       const selectedColor = childFirst.style.backgroundColor;
-      const eventos = event.target;
-      eventos.style.backgroundColor = selectedColor;
+      const evento = event.target;
+      evento.style.backgroundColor = selectedColor;
     });
   }
 }
@@ -73,7 +75,6 @@ selectBoxPixel();
 
 // Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco.
 function createBotton() {
-  const boxPixel = document.querySelectorAll('.pixel');
   const button = document.createElement('button');
   button.id = 'clear-board';
   button.innerText = 'Limpar';
@@ -88,25 +89,25 @@ function createBotton() {
 createBotton();
 
 // Faça o quadro de pixels ter seu tamanho definido pela pessoa usuária e limite o tamanho mínimo e máximo do board.
-const div4 = document.createElement('div');
-div4.id = 'button-input';
-document.body.insertBefore(div4, document.querySelector('#clear-board'));
+const div = document.createElement('div');
+div.id = 'button-input';
+document.body.insertBefore(div, document.querySelector('#clear-board'));
 
-const input1 = document.createElement('input');
-input1.placeholder = 'Tamanho'; // https://www.w3schools.com/jsref/prop_text_placeholder.asp
-input1.id = 'board-size';
-input1.type = 'number';
-input1.min = '1';
-div4.appendChild(input1);
+const input = document.createElement('input');
+input.placeholder = 'Tamanho do Quadrado'; // https://www.w3schools.com/jsref/prop_text_placeholder.asp
+input.id = 'board-size';
+input.type = 'number';
+input.min = '1';
+div.appendChild(input);
 
-let button = document.createElement('button');
+const button = document.createElement('button');
 button.id = 'generate-board';
 button.innerText = 'VQV';
-div4.appendChild(button);
+div.appendChild(button);
 
 function input2() {
   button.addEventListener('click', function () {
-    let inputNumber = input1.value;
+    let inputNumber = input.value;
     if (inputNumber === '') {
       alert('Board inválido!');
       return;
