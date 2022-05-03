@@ -1,4 +1,17 @@
+* {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body {
+  background-image: url('image/art-zoom-background-design-template-0e16ab894b33a7cf94b131153423b4f8_screen.jpeg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
 #title {
+  font-size: 50px;
   text-align: center;
   margin-top: 20px;
 }
@@ -27,7 +40,21 @@
 #clear-board {
   margin-bottom: 10px;
   margin-top: 10px;
+  size: 30px;
+  display: inline-block;
+  width: 80px;
+  height: 25px;
 }
+
 #board-size {
   margin-right: 7px;
+  display: inline-block;
+  height: 20px;
+}
+
+#generate-board {
+  font-size: 16px;
+  display: inline-block;
+  width: 50px;
+  height: 23px;
 }
