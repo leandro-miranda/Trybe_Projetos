@@ -1,0 +1,83 @@
+#header {
+  text-align: center;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+#section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#carta-texto {
+  width: 50%;
+}
+
+#container {
+  margin: 30px 0;
+}
+
+#carta-gerada {
+  text-align: center;
+  font-size: 18px;
+}
+
+#carta-contador {
+  text-align: center;
+}
+
+.newspaper {
+  background-color: antiquewhite;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.magazine1 {
+  background-color: teal;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.magazine2 {
+  background-image: url('images/pink-pattern.png');
+  color: fuchsia;
+  font-family: Verdana;
+  font-weight: 900;
+}
+
+.medium {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.big {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.reallybig {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.rotateleft {
+  display: inline-block;
+  transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
+}
+
+.rotateright {
+  display: inline-block;
+  transform: matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0);
+}
+
+.skewleft {
+  display: inline-block;
+  transform: matrix(1, 0, 0.176327, 1, 0, 0);
+}
+
+.skewright {
+  display: inline-block;
+  transform: matrix(1, 0, -0.176327, 1, 0, 0);
+}
