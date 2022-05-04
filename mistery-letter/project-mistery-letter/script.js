@@ -4,15 +4,15 @@ const generatedLetter = document.getElementById('carta-gerada');
 const accountantLetter = document.getElementById('carta-contador');
 
 function allRandomClasses(spanClass) {
-  const classesNew = ['newspaper', 'magazine1', 'magazine2'];
-  const classesMed = ['medium', 'big', 'reallybig'];
-  const classesRota = ['rotateleft', 'rotateright'];
-  const classesSkew = ['skewleft', 'skewright'];
+  const shapeClass = ['newspaper', 'magazine1', 'magazine2'];
+  const sizeClass = ['medium', 'big', 'reallybig'];
+  const rotationClass = ['rotateleft', 'rotateright'];
+  const slopeClass = ['skewleft', 'skewright'];
 
-  spanClass.classList.add(classesNew[randomNumber(classesNew.length)]);
-  spanClass.classList.add(classesMed[randomNumber(classesMed.length)]);
-  spanClass.classList.add(classesRota[randomNumber(classesRota.length)]);
-  spanClass.classList.add(classesSkew[randomNumber(classesSkew.length)]);
+  spanClass.classList.add(shapeClass[randomNumber(shapeClass.length)]);
+  spanClass.classList.add(sizeClass[randomNumber(sizeClass.length)]);
+  spanClass.classList.add(rotationClass[randomNumber(rotationClass.length)]);
+  spanClass.classList.add(slopeClass[randomNumber(slopeClass.length)]);
 }
 
 function randomNumber(number) {
@@ -45,6 +45,5 @@ letter();
 
 function random(event) {
   event.target.className = '';
-  console.log(event.target);
   allRandomClasses(event.target);
 }
