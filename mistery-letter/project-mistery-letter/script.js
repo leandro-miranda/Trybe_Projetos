@@ -3,21 +3,20 @@ const letterText = document.getElementById('carta-texto');
 const generatedLetter = document.getElementById('carta-gerada');
 const accountantLetter = document.getElementById('carta-contador');
 
-function allRandomClasses() {
-  const allClasses = [
-    'newspaper',
-    'magazine1',
-    'magazine2',
-    'medium',
-    'big',
-    'reallybig',
-    'rotateleft',
-    'rotateright',
-    'skewleft',
-    'skewright',
-  ];
-  const randomClasses = Math.floor(Math.random() * allClasses.length, 0);
-  return allClasses[randomClasses];
+function allRandomClasses(spanClass) {
+  const classesNew = ['newspaper', 'magazine1', 'magazine2'];
+  const classesMed = ['medium', 'big', 'reallybig'];
+  const classesRota = ['rotateleft', 'rotateright'];
+  const classesSkew = ['skewleft', 'skewright'];
+
+  spanClass.classList.add(classesNew[randomNumber(classesNew.length)]);
+  spanClass.classList.add(classesMed[randomNumber(classesMed.length)]);
+  spanClass.classList.add(classesRota[randomNumber(classesRota.length)]);
+  spanClass.classList.add(classesSkew[randomNumber(classesSkew.length)]);
+}
+
+function randomNumber(number) {
+  return Math.floor(Math.random() * number, 0);
 }
 
 function letter() {
@@ -36,10 +35,9 @@ function letter() {
         const spanClass = document.createElement('span');
         spanClass.innerHTML = `${string[i]}`;
         spanClass.addEventListener('click', random);
-        spanClass.classList.add(allRandomClasses());
+        allRandomClasses(spanClass);
         generatedLetter.appendChild(spanClass);
       }
-      //letterText.value = '';
     }
   });
 }
@@ -47,5 +45,6 @@ letter();
 
 function random(event) {
   event.target.className = '';
-  event.target.classList.add(allRandomClasses());
+  console.log(event.target);
+  allRandomClasses(event.target);
 }
