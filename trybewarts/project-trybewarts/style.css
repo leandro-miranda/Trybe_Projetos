@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(193, 183, 183);
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#email {
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 10px;
+}
+
+#password {
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 10px;
+}
+
+#enter {
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100px;
+  color: white;
+  background-color: rgb(79, 5, 125);
+  margin-right: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-h2 {
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#input-name {
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#input-lastname {
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+#input-email {
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  margin-left: 25px;
+}
+
+#house {
+  padding: 10px;
+  width: 35%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#text-house {
+  font-size: 20px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.inputs {
+  margin-top: -50px;
+  margin-bottom: 25px;
+}
+
+.inputs-content {
+  margin-top: 20px;
+}
+
+#label-family {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+#label-content {
+  font-size: 25px;
+}
+
+.family {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.subject {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.labels {
+  font-size: 20px;
+}
+
+#label-rate {
+  font-size: 20px;
+}
+
+#rate1 {
+  margin-left: 10px;
+}
+
+#counter {
+  font-size: 1.3em;
+  position: relative;
+  margin-top: -30px;
+  margin-left: 610px;
+}
+
+textarea {
+  resize: none;
+}
+
+.textarea {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: -15px;
+  margin-left: -500px;
+}
+
+.textAreaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textareaBox {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#label-infos {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#submit-btn {
+  width: 200px;
+  height: 40px;
+  font-size: 1.3em;
+  background-color: rgb(79, 5, 125);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+#submit-btn:disabled {
+  opacity: 0.5;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
