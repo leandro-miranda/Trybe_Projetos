@@ -54,6 +54,10 @@ body {
   margin-right: 15px;
 }
 
+#enter:hover {
+  background-color: rgb(113, 2, 113);
+}
+
 .container {
   display: flex;
   flex-direction: row-reverse;
