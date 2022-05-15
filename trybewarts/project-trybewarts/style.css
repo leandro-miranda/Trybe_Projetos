@@ -139,6 +139,8 @@ body {
 .subject {
   margin-top: 20px;
   margin-bottom: 30px;
+  height: 15px;
+  width: 5%;
 }
 
 .labels {
