@@ -41,6 +41,7 @@ function doubleClick() {
     const element = event;
     element.target.classList.toggle('completed');
   }); // pesquisado no site https://www.w3schools.com/howto/howto_js_toggle_class.asp
+  // toggle: se a classe exitir exclui e retorne false, se não acrescenta e retorna true
 }
 doubleClick();
 
