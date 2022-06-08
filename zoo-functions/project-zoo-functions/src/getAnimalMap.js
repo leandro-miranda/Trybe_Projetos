@@ -1,35 +1,34 @@
 const data = require('../data/zoo_data');
 const { species } = require('../data/zoo_data');
 
-// function getSpeciesAll() {
-//   const specie = species.reduce((acc, { name, location }) => ({
-//     ...acc,
-//     [location]: [...(acc[location] || []), name],
-//   }), {});
-//   return specie;
-// }
-// // console.log(getSpeciesAll());
+function getSpeciesAll() {
+  const speciesAll = {};
+  species.forEach((specie) => {
+    if (!speciesAll[specie.location]) speciesAll[specie.location] = [];
+    speciesAll[specie.location].push(specie.name);
+  });
+  return speciesAll;
+}
 
-// function speciesResidents(specieNames, specieSorted, speciesex) {
-//   const nameResidents = (includeNames, sorted, sex) => {
-//     if (sex && sorted) {
-//       return species
-//         .filter(({ sex: speciesSex }) => sex === speciesSex)
-//         .map(({ name }) => name).sorte();
-//     }
-//     if (sorted) return species.map(({ name }) => name).sort();
-//     if (sex) {
-//       return includeNames
-//         .filter(({ sex: speciesSex }) => sex === speciesSex)
-//         .map(({ name }) => name);
-//     }
-//     return includeNames.map(({ name }) => name);
-//   };
-//   return nameResidents;
-// }
-// // console.log(speciesResidents());
+function returnSpeciesAll(sorted, sex) {
+  const includ = {};
+  species.forEach((specie) => {
+    if (!includ[specie.location]) includ[specie.location] = [];
+    let residents = [...specie.residents];
+    if (sex) residents = residents.filter((specieSex) => specieSex.sex === sex);
+    residents = residents.map((resident) => resident.name);
+    if (sorted) residents.sort();
+
+    includ[specie.location].push({ [specie.name]: residents });
+  });
+  return includ;
+}
+
 function getAnimalMap(options) {
-  // seu código aqui
+  if (!options) return getSpeciesAll();
+  const { includeNames, sorted, sex } = options;
+  if (includeNames) return returnSpeciesAll(sorted, sex);
+  return getSpeciesAll();
 }
 
 module.exports = getAnimalMap;
