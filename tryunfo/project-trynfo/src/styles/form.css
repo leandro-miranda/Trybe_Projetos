@@ -1,0 +1,66 @@
+.form {
+  background-color: #fafafa;
+  height: 1056px;
+  left: 0;
+  top: 0;
+  width: 1440px;
+}
+
+.title {
+  color: #444955;
+  font-family: sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  height: 136px;
+  left: 31px;
+  line-height: 29px;
+  top: 122px;
+  width: 355px;
+}
+
+.label-name {
+  bottom: 0%;
+  color: #3d495c;
+  font-family: Verdana , Geneva , Tahoma , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  left: 0%;
+  line-height: 150%;
+  right: 85.07%;
+  top: 0%;
+}
+
+.input-name {
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  height: 37px;
+  left: 0;
+  padding: 0;
+  top: 0;
+  width: 355px;
+}
+
+.label-description {
+  bottom: 0%;
+  color: #3d495c;
+  font-family: Verdana , Geneva , Tahoma , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  left: 0%;
+  line-height: 150%;
+  right: -79.59%;
+  top: 0%;
+}
+
+.input-textarea {
+  background: white;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+}
