@@ -1,0 +1,50 @@
+.system-solar {
+  column-gap: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 10%;
+  margin-top: 5em;
+  row-gap: 1em;
+}
+
+.planet {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.planet > img {
+  width: 70%;
+}
+
+.solar-system {
+  width: 100%;
+}
+
+.planet:hover {
+  border: 1px solid white;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+}
+
+.tooltip { /* https://www.w3schools.com/css/css_tooltip.asp */
+  border-bottom: 1px dotted black;
+  display: inline-block;
+  position: relative;
+}
+
+.planet .tooltiptext {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+  padding: 7px 0;
+  text-align: center;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.planet:hover .tooltiptext {
+  visibility: visible;
+}

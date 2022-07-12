@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+}
+
+.App {
+  background-image: url('./images/background.png');
+  opacity: 1;
+  text-align: center;
+  width: 100%;
+}
