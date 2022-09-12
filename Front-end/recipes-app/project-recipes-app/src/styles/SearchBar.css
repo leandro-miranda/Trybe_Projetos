@@ -1,0 +1,29 @@
+@media only screen and ( min-width : 360px ) and ( max-width : 640px ) {
+
+  .search-bar-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-input {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .filters {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .button-search {
+    border-radius: 12px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+}

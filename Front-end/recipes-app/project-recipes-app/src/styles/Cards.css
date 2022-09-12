@@ -1,0 +1,62 @@
+@media only screen and ( min-width : 360px ) and ( max-width : 640px ) {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .foods-container {
+    background-color: #ffd0b3;
+    padding-bottom: 30px;
+  }
+
+  .drinks-container {
+    background-color: #ffd0b3;
+    padding-bottom: 30px;
+  }
+
+  .card-container {
+    align-items: center;
+    display: grid;
+    font-family: 'Baloo Paaji 2' , cursive;
+    grid-gap: 20px;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    padding: 2px;
+    width: min-content;
+  }
+
+  .filter-container {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .filter-container button {
+    border-color: #f79f94;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+  }
+
+  .card-container h4 {
+    color: #506266;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .cards {
+    border-top: 1px solid black;
+    padding-top: 28px;
+  }
+}

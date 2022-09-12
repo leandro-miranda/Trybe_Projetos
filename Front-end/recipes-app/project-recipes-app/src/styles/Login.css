@@ -1,0 +1,54 @@
+@media only screen and ( min-width : 360px ) and ( max-width : 640px ) {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .login-container {
+    align-self: center;
+    background-color: #69310e;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .login-container h1 {
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+  }
+
+  .password-input, .email-input {
+    border-color: #f79f94;
+    border-radius: 80px;
+    text-align: center;
+  }
+
+  form {
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+  }
+
+  .login-button button {
+    border-color: #f79f94;
+    border-radius: 6px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 6px;
+    width: min-content;
+  }
+
+  .login-button button:hover {
+    cursor: pointer;
+    text-shadow: 1px  #2f6627;
+  }
+
+  .logo {
+    margin-top: 16px;
+  }
+}
