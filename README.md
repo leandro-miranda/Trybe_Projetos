@@ -10,5 +10,8 @@
     <li>Testes Unitários</li>
     <li>Testes com JEST</li>
     <li>ReactJS</li>
+    <li>Docker</li>
+    <li>SQL</li>
+    
   <ul>
 
