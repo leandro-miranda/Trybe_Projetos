@@ -1,7 +1,7 @@
 const validationWatchedAt = (req, res, next) => {
   const { talk: { watchedAt } } = req.body;
 
-  if (!watchedAt) {
+  if (!watchedAt || watchedAt === '') {
     return res.status(400).json({ message: 'O campo "watchedAt" é obrigatório' });
   }
 
