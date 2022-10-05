@@ -38,10 +38,25 @@ router.post('/',
   validationTalk, 
   validationWatchedAt, 
   validationRate, async (req, res) => {
-  const result = await readFiles();
-    result.push({ id: result.length + 1, ...req.body });
-    writeFiles(result);
-  return res.status(201).json({ id: result.length, ...req.body });
+    const result = await readFiles();
+      result.push({ id: result.length + 1, ...req.body });
+      writeFiles(result);
+    return res.status(201).json({ id: result.length, ...req.body });
+});
+
+router.put('/:id', 
+  validationAuthorization, 
+  validationName, 
+  validationAge, 
+  validationTalk, 
+  validationWatchedAt, 
+  validationRate, async (req, res) => {
+    const { id } = req.params;
+    const result = await readFiles();
+    const person = result.findIndex((i) => i.id === +(id));
+      result[person] = { ...result[person], ...req.body };
+      writeFiles(result);
+    return res.status(200).json(result[person]);
 });
 
 module.exports = router;
