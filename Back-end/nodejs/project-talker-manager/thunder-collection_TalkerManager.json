@@ -1,0 +1,208 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "TalkerManager",
+  "dateExported": "2022-10-03T16:35:28.510Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "893528f0-c6f8-4f9f-b825-ab407b13fdf2",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "1 - Get no /talker",
+      "url": "http://localhost:3000/talker",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-09-30T20:27:09.799Z",
+      "modified": "2022-10-03T16:33:12.305Z",
+      "headers": [
+        {
+          "name": "teste",
+          "value": "1"
+        }
+      ],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "b501d304-b2ee-4b67-89b9-4064cd9b3af1",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "6 - Put no /talker/:id",
+      "url": "http://localhost:3001/4",
+      "method": "PUT",
+      "sortNum": 30000,
+      "created": "2022-09-30T20:27:17.115Z",
+      "modified": "2022-09-30T20:27:17.115Z",
+      "headers": [
+        {
+          "name": "authorization",
+          "value": "a535691889fc7d30"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"name\": \"Luna Lovegood\",\n    \"house\": \"Ravenclaw\",\n    \"ancestry\": \" \",\n    \"patronus\": \"hare\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "9354a966-e5b0-4ed5-8002-22cf2e3731ee",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "2 - GET por Id",
+      "url": "http://localhost:3000/talker/3",
+      "method": "GET",
+      "sortNum": 35000,
+      "created": "2022-09-30T20:27:29.598Z",
+      "modified": "2022-10-03T16:34:23.828Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\": \"1\",\n  \"name\": \"Avai\",\n  \"initials\": \"AVI\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "0fc09841-5b40-4bc6-8cf8-d571182489d7",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "3 - POST no /login",
+      "url": "http://localhost:3000/login",
+      "method": "POST",
+      "sortNum": 50000,
+      "created": "2022-09-30T20:27:36.871Z",
+      "modified": "2022-10-03T16:32:19.040Z",
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "*/*",
+          "isDisabled": true
+        },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)",
+          "isDisabled": true
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"email@email.com\",\n  \"password\": \"1234564\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "e28b23a3-7157-4cee-bba2-b7f67815257a",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "4- POST no /login validações",
+      "url": "http://localhost:3000/login",
+      "method": "POST",
+      "sortNum": 60000,
+      "created": "2022-09-30T20:27:58.753Z",
+      "modified": "2022-10-03T16:34:46.916Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"email@email.com\",\n  \"password\": \"1234566\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "d8158cb5-3052-4a5c-b6d7-5c01c5ff2b0b",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "5 - Post no /talker com token",
+      "url": "http://localhost:3000/talker",
+      "method": "POST",
+      "sortNum": 70000,
+      "created": "2022-09-30T20:28:11.039Z",
+      "modified": "2022-10-03T16:35:09.724Z",
+      "headers": [
+        {
+          "name": "authorization",
+          "value": "6406d22217069313"
+        },
+        {
+          "name": "Accept",
+          "value": "*/*",
+          "isDisabled": true
+        },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)",
+          "isDisabled": true
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Danielle Santos\",\n  \"age\": 56,\n  \"talk\": {\n    \"watchedAt\": \"22/10/2019\",\n    \"rate\": 5\n  }\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "26c44afa-0990-4629-b478-701fade959eb",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "7 - delete por id",
+      "url": "http://localhost:3000/talker/2",
+      "method": "DELETE",
+      "sortNum": 80000,
+      "created": "2022-09-30T20:28:20.389Z",
+      "modified": "2022-09-30T20:28:20.389Z",
+      "headers": [
+        {
+          "name": "authorization",
+          "value": "a535691889fc7d30"
+        }
+      ],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "20a8a317-d221-4873-a97e-253605f68a2e",
+      "colId": "6e035aa6-a24b-43e3-bfcd-a43045136232",
+      "containerId": "",
+      "name": "8 - Get com query",
+      "url": "http://localhost:3000/talker/search?q=He",
+      "method": "GET",
+      "sortNum": 90000,
+      "created": "2022-10-03T16:34:12.196Z",
+      "modified": "2022-10-03T16:34:12.196Z",
+      "headers": [
+        {
+          "name": "authorization",
+          "value": "2a07bce28852bca9"
+        },
+        {
+          "name": "Accept",
+          "value": "*/*",
+          "isDisabled": true
+        },
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)",
+          "isDisabled": true
+        }
+      ],
+      "params": [
+        {
+          "name": "q",
+          "value": "He",
+          "isPath": false
+        }
+      ],
+      "tests": []
+    }
+  ]
+}
