@@ -59,4 +59,12 @@ router.put('/:id',
     return res.status(200).json(result[person]);
 });
 
+router.delete('/:id', validationAuthorization, async (req, res) => {
+  const { id } = req.params;
+  const result = await readFiles();
+  const deletePerson = result.find((person) => person.id !== +(id));
+    writeFiles(deletePerson);
+  return res.status(204).json(deletePerson);
+});
+
 module.exports = router;
