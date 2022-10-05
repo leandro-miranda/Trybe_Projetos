@@ -1,5 +1,12 @@
 const express = require('express');
+const validationAge = require('../middlewares/validationAge');
+const validationAuthorization = require('../middlewares/validationAuthorization');
+const validationName = require('../middlewares/validationName');
+const validationRate = require('../middlewares/validationRate');
+const validationTalk = require('../middlewares/validationTalk');
+const validationWatchedAt = require('../middlewares/validationWatchedAt');
 const readFiles = require('../utils/readFiles');
+const writeFiles = require('../utils/writeFiles');
 
 const router = express.Router();
 
@@ -22,6 +29,19 @@ router.get('/:id', async (req, res) => {
   } else {
     res.status(200).json(result[person]);
   }
+});
+
+router.post('/', 
+  validationAuthorization, 
+  validationName, 
+  validationAge, 
+  validationTalk, 
+  validationWatchedAt, 
+  validationRate, async (req, res) => {
+  const result = await readFiles();
+    result.push({ id: result.length + 1, ...req.body });
+    writeFiles(result);
+  return res.status(201).json({ id: result.length, ...req.body });
 });
 
 module.exports = router;
