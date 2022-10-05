@@ -19,6 +19,17 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/search', validationAuthorization, async (req, res) => {
+  const { q } = req.query;
+  const result = await readFiles();
+  const filterPerson = result.filter((person) => person.name.includes(q));
+
+  if (!q) {
+    return res.status(404).json({ message: 'Pessoa palestrante não encontrada' });
+  }
+  res.status(200).json(filterPerson);
+});
+
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
   const result = await readFiles();
