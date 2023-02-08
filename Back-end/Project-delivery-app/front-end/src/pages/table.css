@@ -1,0 +1,30 @@
+table {
+  padding: 10px;
+  width: 100%;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* border-radius: 10px 0 0 10px; */
+.primary {
+  background-color: #036b52;
+}
+
+.secondary {
+  background-color: #2fc18c;
+}
+
+.tertiary {
+  background-color: #421981;
+}
+
+.text-light {
+  color: #f2fffc;
+}
+
+.text-dark {
+  color: #001813;
+}

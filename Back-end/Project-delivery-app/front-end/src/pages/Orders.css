@@ -1,0 +1,64 @@
+.sale-card {
+  background: #eaf1ef;
+  border: 1px solid	#29927a;
+  border-radius: 15px;
+  box-shadow: 0.1px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  padding: 4%;
+}
+
+a {
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.precin-2 {
+  background-color: #2fc18c;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.data-2 {
+  background: white;
+  border-radius: 5px;
+  margin-right: 2%;
+  padding: 3%;
+}
+
+.pedido-2 {
+  background-color: #421981;
+  border-radius: 5px;
+  color: #eaf1ef;
+  margin-right: 2%;
+  padding: 3%;
+}
+
+.orders-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sales {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.status-2 {
+  background: #ccb800;
+  border-radius: 5px;
+  margin-right: 2%;
+  padding: 3%;
+}
+
+.sales h1 {
+  color: #036b52;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
