@@ -10,8 +10,17 @@
     <li>Testes Unitários</li>
     <li>Testes com JEST</li>
     <li>ReactJS</li>
+    <li>Redux</li>
     <li>Docker</li>
     <li>SQL</li>
-    
+    <li>NodeJS</li>
+    <li>Typescript</li>
+    <li>MongoDB</li>
+    <li>Mongoose</li>
+    <li>Clean Code</li>
+    <li>Solid</li>
+    <li>POO</li>
+    <li>TDD</li>
+    <li>Python</li>
   <ul>
 
